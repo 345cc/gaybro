@@ -74,7 +74,6 @@ okdude = game:GetService("Players")[control].Chatted:Connect(function(msg)
 			cmd = string.sub(msg,2)
 		end
 		if cmd == "fling" then
-			getonsky(false)
 			local angle = 0
 			local TimeToWait = 2
 			local oldpos = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid").RootPart.CFrame
@@ -157,7 +156,6 @@ okdude = game:GetService("Players")[control].Chatted:Connect(function(msg)
 				)
 				task.wait()
 			until (plr.Character:FindFirstChildOfClass("Humanoid").RootPart.Position - oldpos.p).Magnitude < 5
-			getonsky(true)
 		end
 		if cmd == "exit" then
 			wtf()
