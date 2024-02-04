@@ -43,7 +43,6 @@ function rand180()
 end
 
 
-
 local part = Instance.new("Part", workspace)
 part.Position = Vector3.new(9999,9999,9999)
 part.Size = Vector3.new(25,1,25)
@@ -86,7 +85,7 @@ controller.Chatted:Connect(function(msg)
 			local Time = os.clock()
 			local var = string.sub(msg,space+1)
 			local target = getplayer(var)
-			if target == nil then
+			if target == nil then end
 			local TRootPart = target.Character:FindFirstChildOfClass("Humanoid").RootPart
 			local THumanoid = target.Character:FindFirstChildOfClass("Humanoid")
 			local Humanoid = char and char:FindFirstChildOfClass("Humanoid")
